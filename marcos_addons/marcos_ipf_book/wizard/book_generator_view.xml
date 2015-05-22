@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<openerp>
+    <data>
+
+        <record model="ir.ui.view" id="book_form_wizard_daily_book">
+            <field name="name">wizard.form.book.daily</field>
+            <field name="model">marcos.ipf.daily.wizard</field>
+            <field name="arch" type="xml">
+                <form string="Generar libro diario">
+                    <group>
+                        <field name="branches_id"/>
+                        <field name="date"/>
+                    </group>
+                    <footer>
+                        <button name="generate" string="Generar" type="object" class="oe_highlight"/>
+                        or
+                        <button string="Cancelar" class="oe_link" special="cancel"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+
+        <act_window id="launch_the_wizard_daily_book"
+                    name="Generar libro diario"
+                    src_model="marcos.ipf.book.daily"
+                    res_model="marcos.ipf.daily.wizard"
+                    view_mode="form"
+                    target="new"
+                    key2="client_action_multi"/>
+
+
+        <menuitem id="marcos_ipf_book_diario_generator_menu" name="Generar libro diario"
+                  parent="marcos_ipf_book_submenu_book_generators"
+                  action="launch_the_wizard_daily_book" sequence="1"/>
+
+
+        <record model="ir.ui.view" id="book_form_wizard_monthly_book">
+            <field name="name">wizard.form.book.monthly</field>
+            <field name="model">marcos.ipf.monthly.wizard</field>
+            <field name="arch" type="xml">
+                <form string="Generar libro Mensual">
+                    <group>
+                        <field name="period"/>
+                    </group>
+                    <footer>
+                        <button name="generate" string="Generar" type="object" class="oe_highlight"/>
+                        or
+                        <button string="Cancelar" class="oe_link" special="cancel"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+
+        <act_window id="launch_the_wizard_monthly_book"
+                    name="Generar libro mensual"
+                    src_model="marcos.ipf.book.monthly"
+                    res_model="marcos.ipf.monthly.wizard"
+                    view_mode="form"
+                    target="new"
+                    key2="client_action_multi"/>
+
+
+
+        <menuitem id="marcos_ipf_book_mensual_generator_menu" name="Generar libro mensual"
+                  parent="marcos_ipf_book_submenu_book_generators"
+                  action="launch_the_wizard_monthly_book" sequence="2"/>
+
+
+
+
+    </data>
+</openerp>

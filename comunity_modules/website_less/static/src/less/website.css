@@ -1,0 +1,11 @@
+#wrapwrap {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+}
+#wrapwrap > * {
+  display: table-row;
+}
+#wrapwrap > footer {
+  height: 100%;
+}

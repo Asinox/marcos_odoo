@@ -1,0 +1,2 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_marcos_ncf_marcos_ncf,marcos_ncf.marcos_ncf,model_marcos_dgii_purchase_report,dgii_compras_group_manager,1,1,1,1
