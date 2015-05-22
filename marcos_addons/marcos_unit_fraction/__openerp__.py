@@ -18,36 +18,34 @@
 #    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
 ##############################################################################
-
 {
-    'name': 'Dominican Republic - Payroll',
-    'version': '1.0',
-    'category': 'Localization',
+    'name': "marcos_unit_fraction",
+
+    'summary': """
+        Short (1 phrase/line) summary of the module's purpose, used as
+        subtitle on modules listing or apps.openerp.com""",
+
     'description': """
-This is the base module to manage the payroll for Dominican Republic.
-==============================================================================
-    * Base salary rules for Dominican Republic
+        Long description of module's purpose
     """,
-    'author': 'Manuel Guilamo & Eneldo Serrata - Marcos Organizador de Negocios, SRL.',
-    'website': 'http://marcos.do',
+
+    'author': "Your Company",
+    'website': "http://www.yourcompany.com",
 
     # Categories can be used to filter modules in modules listing
     # Check https://github.com/odoo/odoo/blob/master/openerp/addons/base/module/module_data.xml
     # for the full list
+    'category': 'Uncategorized',
     'version': '0.1',
 
     # any module necessary for this one to work correctly
-    'depends': ['base', 'account', 'marcos_l10n_do', "hr", "hr_payroll", "hr_payslip_paid"],
+    'depends': ['base', 'product'],
 
     # always loaded
     'data': [
-        'views/views.xml',
-        'data/hr.s    alary.rule.category.csv',
-        'data/hr.salary.rule.csv',
-        'data/no_account/hr.salary.rule.csv',
-        'data/hr.payroll.structure.csv',
-        'security/ir.model.access.csv',
+        # 'security/ir.model.access.csv',
         'templates.xml',
+        'view/view.xml'
     ],
     # only loaded in demonstration mode
     'demo': [
