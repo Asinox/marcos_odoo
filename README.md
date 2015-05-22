@@ -1,7 +1,7 @@
 marcos_odoo
 -----------
 
-marcos_odoo if a fork from oficial repository odoo and it contains the modules needed to be implemented in the Dominican Republic that are in the folder marcos_odoo, plus a compilation of modules of the global community that also can be implemented in our private region.
+marcos_odoo if a fork from oficial repository odoo and it contains the modules needed to be implemented in the Dominican Republic that are in the folder marcos_odoo, plus a compilation of modules of the global community that also can be implemented in our region.
 
 
 [![Build Status](http://runbot.odoo.com/runbot/badge/flat/1/8.0.svg)](http://runbot.odoo.com/runbot)
